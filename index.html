@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/resposive.css">
+</head>
+
+<body>
+    <div class="fixed-media">
+        <div class="vl"></div>
+        <a href="" class="fixed"><img src="/icon/Github.svg" alt="" class="fixed"></a>
+        <a href="" class="fixed"><img src="/icon/Dribble.svg" alt="" class="fixed"></a>
+        <a href="" class="fixed"> <img src="/icon/Figma.svg" alt="" class="fixed"></a>
+    </div>
+    <div class="container">
+        <!-- nav  -->
+        <nav>
+            <div class="logo">
+                <img src="/icon/Style=Default.svg" alt="">
+                <span class="logo-text">Elias</span>
+            </div>
+            <span class="nav-menu-bar">
+                <img src="/icon/Frame 60.svg" alt="" onclick="Open()" class="menu-bar-icon open">
+                <img src="/icon/close (2).svg" alt="" onclick="Close()" class="menu-bar-icon close">
+            </span>
+            <ul id="menu-block" class="menu-block">
+
+                <li><a href="#home" onclick="Close()" class="link link-1"><span class="span-link">#</span>home</a></li>
+                <li><a href="#work" onclick="Close()" class="link link-0"><span class="span-link">#</span>work</a></li>
+                <li><a href="#about-me" onclick="Close()" class="link link-0"><span class="span-link">#</span>about-me</a></li>
+                <li><a href="#contacts" onclick="Close()" class="link link-0"><span class="span-link">#</span>contact</a></li>
+                <li>
+                    <select class="dropdown">
+                        <option value="en">EN</option>
+                        <option value="en">RU</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- main  -->
+        <div id="home" class="main">
+            <div class="left">
+                <h2 class="h2">Elias is a <span>web designer</span> and <br> <span>front-end developer</span></h2>
+                <p class="p">He crafts responsive websites where technologies meet creativity</p>
+                <button class="button-1">Contact me!!</button>
+            </div>
+            <div class="right">
+                <img src="/img/Image-1.png" alt="">
+                <button class="button-2 btn-right">
+                    <span></span>
+                    Currently working on <b>Portfolio</b></button>
+            </div>
+        </div>
+
+        <div class="quots">
+            <div class="quotes-div">
+                <fieldset class="quots-border">
+                    <legend><img src="/icon/comma.svg" alt=""></legend>
+                    <p class="quotes-p">With great power comes great electricity bill</p>
+
+                </fieldset>
+                <fieldset class="quots-border-by">
+                    <legend><img src="/icon/comma.svg" alt=""></legend>
+                    <p class="quotes-p">- Dr. Who</p>
+                </fieldset>
+
+            </div>
+        </div>
+
+        <!-- projects -->
+        <div id="work">
+            <div class="top">
+                <div class="flex">
+                    <h2 class="h2"><span>#</span>projects</h2>
+                    <div class="hr"></div>
+                </div>
+                <button class="button-1 btn-top">View all ~~></button>
+            </div>
+
+            <div class="grid-container">
+
+                <div class="card">
+                    <img src="/img/Rectangle 22.jpg" alt="">
+                    <p class="p p1">HTML SCSS Python Flask</p>
+                    <h2 class="h2">ChertNodes</h2>
+                    <p class="p p2">Minecreft server hosting</p>
+                    <button class="button-1 card-btn">Live <~></button>
+                    <button class="button-2 card-btn">Cached >=</button>
+                </div>
+                <div class="card">
+                    <img src="/img/Rectangle 22-2.png" alt="">
+                    <p class="p p1">React Express Discord.js Node.js HTML SCSS Python Flask</p>
+                    <h2 class="h2">ProjectX</h2>
+                    <p class="p p2">Discord anti-crash bot</p>
+                    <button class="button-1 card-btn">Live <~></button>
+                </div>
+                <div class="card">
+                    <img src="/img/Rectangle 22-3.png" alt="">
+                    <p class="p p1">CSS Express Node.js</p>
+                    <h2 class="h2">Kahoot Answers Viewer</h2>
+                    <p class="p p2">get answer to your best kahoot quiz</p>
+                    <button class="button-1 card-btn">Live <~></button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- skills -->
+        <div id="skills">
+            <div class="top">
+                <div class="flex">
+                    <h2 class="h2"><span>#</span>skills</h2>
+                    <div class="hr"></div>
+                </div>
+            </div>
+
+            <div class="skill-flex">
+                <div class="left">
+                    <img src="/img/Group 36.svg" alt="">
+                </div>
+
+                <div class="right">
+
+                    <div class="col">
+
+                        <div class="row">
+                            <p class="row-h">Languages</p>
+                            <p class="row-p">Typescript Lua<br>Python Javascript</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="row">
+                            <p class="row-h">Databases</p>
+                            <p class="row-p">SQLite PostgreSQL<br>Mongo</p>
+                        </div>
+
+                        <div class="row">
+                            <p class="row-h">Other</p>
+                            <p class="row-p">HTML CSS EJS SCSS<br>REST Jinja</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="row">
+                            <p class="row-h">Tools</p>
+                            <p class="row-p">VSCode Neovim Linux<br>Figma XFCE Arch<br>Git Font Awesome</p>
+                        </div>
+
+                        <div class="row">
+                            <p class="row-h">Frameworks</p>
+                            <p class="row-p">React Vue<br>Disnake Discord.js<br>Flask Express.js</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="about-me">
+
+            <div class="top">
+                <div class="flex">
+                    <h2 class="h2"><span>#</span>about-me</h2>
+                    <div class="hr"></div>
+                </div>
+            </div>
+
+
+            <div class="about-me-flex">
+                <div class="p">
+                    Hello, i’m Elias! <br><br>
+
+                    I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites
+                    from scratch and raise them into modern user-friendly web experiences. <br><br>
+                    Transforming my creativity and knowledge into a websites has been my passion for over a year. I
+                    have been helping various clients to establish their presence online. I always strive to learn
+                    about the newest technologies and frameworks.
+
+                    <br><br>
+                    <button class="button-1">Read more -></button>
+                </div>
+
+                <!-- <div class=""> -->
+                    <img class="img about-me-img" src="/img/Image.png" alt="">
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <div id="contacts">
+
+            <div class="top">
+                <div class="flex">
+                    <h2 class="h2"><span>#</span>contacts</h2>
+                    <div class="hr"></div>
+                </div>
+            </div>
+
+            <div class="contacts-flex ">
+                <div class="left">
+                    <p class="contacts-flex-p">I’m interested in freelance opportunities. However, if you have other
+                        request or question, don’t
+                        hesitate to contact me</p>
+                </div>
+                <div class="right">
+
+                    <div class="contacts-flex-card">
+                        <p class="p-contacts-flex-card">Message me here</p>
+                        <a href="#" class="media media-1"><img src="/icon/Discord.svg" alt=""> !Elias#3519</a>
+                        <a href="#" class="media media-1"><img src="/icon/Email.svg" alt=""> @elias@elias.me</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+
+        <div class="container">
+            <div class="left">
+                <div class="logo">
+                    <img src="/icon/Style=Default.svg" alt="">
+                    <span class="logo-text">Elias</span>
+                    <a class="link-footer-container" href="mailto:elias@elias-dev.ml">elias@elias-dev.ml</a>
+                </div>
+                <p class="footer-p-container">Web designer and front-end developer</p>
+            </div>
+            <div class="right">
+                <div class="footer-card">
+                    <h2 class="h2 h2-footer">Media</h2>
+                    <a class="icon-link" href="#"> <img class="footer-icon" src="/icon/Github.svg" alt=""></a>
+                    <a class="icon-link" href="#"><img class="footer-icon" src="/icon/Figma.svg" alt=""></a>
+                    <a class="icon-link" href="#"><img class="footer-icon" src="/icon/Discord.svg" alt=""></a>
+                </div>
+            </div>
+
+
+        </div>
+        <p class="container-center">
+            © Copyright 2022. Made by Elias
+        </p>
+    </footer>
+<script src="/js/script.js"></script>
+</body>
+
+</html>

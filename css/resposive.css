@@ -1,0 +1,245 @@
+:root {
+    --bg: rgba(40, 44, 51, 1);
+
+    --purple: #C778DD;
+    --lightpurple: rgba(199, 120, 221, 0.2);
+    --bg-gray: #2c3036;
+    --gray: rgba(171, 178, 191, 1);
+    --lightgray: rgba(171, 178, 191, 0.2);
+}
+
+@media(max-width:980px) {
+    .container {
+        margin: 0 auto;
+        max-width: 1024px;
+    }
+}
+
+@media(max-width:992px) {
+    nav {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding-left: 10%;
+        padding-right: 10%;
+        background: var(--bg);
+    }
+
+    .nav-menu-bar {
+        display: block;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        transition: all .1s;
+    }
+
+    .nav-menu-bar:hover {
+        transform: scale(1.3);
+        /* background: #000; */
+        padding: 2px;
+        border: 1px solid var(--gray);
+    }
+
+    .fixed-media {
+        display: none;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 75%;
+    }
+
+    /* nav bar */
+    #menu-block {
+        top: 62px;
+        height: 100vh;
+        position: fixed;
+        display: block;
+        width: 100%;
+        background: var(--bg);
+    }
+
+    .open {
+        display: inline-block;
+    }
+
+    .close {
+        display: none;
+    }
+
+    #menu-block li {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 8px;
+    }
+
+    #menu-block li a {
+        font-size: 32px;
+    }
+
+    .dropdown {
+        font-size: 32px;
+    }
+
+    .menu-block {
+        left: -100%;
+        transition: all 0.3s;
+    }
+
+    .show {
+        left: 0;
+    }
+
+    /* main */
+    .main {
+        display: block;
+        width: 100%;
+    }
+
+    .main .left,
+    .main .right {
+        /* border: 1px solid; */
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    .main .right {
+        width: fit-content;
+        margin: 5rem auto;
+    }
+
+    /* skill */
+    .skill-flex {
+        display: block;
+    }
+
+    .skill-flex .left,
+    .skill-flex .right {
+        width: fit-content;
+        max-width: 100%;
+        margin: 2rem auto;
+    }
+
+    .skill-flex>.left {
+        width: 70%;
+    }
+
+    /* about-me */
+    .about-me-flex {
+        display: block;
+    }
+
+    .about-me-flex .p,
+    .about-me-flex .img {
+        width: fit-content;
+        max-width: 100%;
+        margin: 2rem auto;
+    }
+}
+
+@media(max-width:600px) {
+    .container {
+        overflow: hidden;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .main .left,
+    .main .right {
+        max-width: 100%;
+        margin-top: 5rem;
+    }
+
+    .main .left {
+        min-height: max-content;
+        padding-top: 130px;
+    }
+
+    .main .right img {
+        width: 100%;
+    }
+
+    .button-2.btn-right {
+        width: 90%;
+        text-align: left;
+    }
+
+    .button-2.btn-right {
+        flex-shrink: 0;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .skill-flex>.left {
+        width: 70%;
+    }
+
+    .skill-flex>.left img {
+        width: 100%;
+    }
+
+    .skill-flex>.right {
+        display: block;
+    }
+
+    .skill-flex>.right .col {
+        width: 300px;
+        max-width: 100%;
+    }
+
+    .about-me-img {
+        height: 300px;
+    }
+
+    .contacts-flex {
+        display: block;
+    }
+
+    .contacts-flex .left,
+    .contacts-flex .right {
+        max-width: 100%;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    .contacts-flex-card {
+        float: none;
+        margin: auto;
+        width: 100%;
+    }
+
+    footer .container {
+        display: block;
+    }
+
+    footer .container .left,
+    footer .container .right {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    footer .container .left .logo {
+        display: block;
+        margin: auto;
+        height: auto;
+    }
+
+    .footer-card {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .h2-footer {
+        text-align: center;
+    }
+
+    .container-center {
+        margin: 2rem auto;
+    }
+}
